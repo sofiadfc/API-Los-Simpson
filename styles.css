@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(247, 128, 101);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.contenedor {
+  text-align: center;
+  width: 30%;
+  max-width: fit-content;
+}
+  
+#logo {
+  text-align: center;
+  width: 50%;
+  max-width: max-content;
+}
+  
+.tarjeta {
+  background: #fff;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+  padding: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8f8;
+}
+  
+.imagen-personaje {
+  width: 40%;
+  object-fit: contain;
+  margin-bottom: 5%;
+}
+  
+.nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+  
+.cita {
+  font-size: 1rem;
+  font-style: italic;
+  color: #666;
+  margin: 3% 0;
+}
+  
+.boton {
+  background-color: #db2f32;
+  color: #ffffff;
+  border: none;
+  padding: 4% 6%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+  
+.boton:hover {
+  background-color: #b62729;
+  box-shadow:  0px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 80%; 
+  }
+
+  #logo {
+    width: 70%; 
+  }
+
+  .imagen-personaje {
+    width: 60%; 
+  }
+
+  .tarjeta {
+    padding: 10%;
+ }
+
+  .boton {
+    padding: 4% 8%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    width: 90%;   }
+
+  #logo {
+    width: 80%;  }
+
+  .imagen-personaje {
+    width: 80%;
+  }
+
+  .tarjeta {
+    padding: 15%;
+  }
+
+  .boton {
+    padding: 4% 8%;
+  }
+}
